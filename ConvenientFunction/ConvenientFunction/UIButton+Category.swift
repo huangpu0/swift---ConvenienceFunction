@@ -48,6 +48,7 @@ extension UIButton {
         self.setTitle(title, for: .normal)
         self.setTitleColor(titleColor, for: .normal)
         self.titleLabel?.sizeToFit()
+        self.setImage(UIImage.init(named: imageName), for: .normal)
     }
     
     //MARK:  图文形式分两种 2> 以图为背景
@@ -56,5 +57,6 @@ extension UIButton {
         self.setTitle(title, for: .normal)
         self.setTitleColor(titleColor, for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: font)
+        self.setBackgroundImage(UIImage.init(named: backgroundImageName), for: .normal)
     }
 }
